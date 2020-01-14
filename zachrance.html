@@ -5,33 +5,283 @@
             Ahoj
         </title>
     </head>
+    <style type="text/css"> 
+        @font-face {
+            font-family: ginko;
+            src: url('fonts/ginko.ttf') format('truetype');
+        }
+
+        table#t01 {
+            font-family: ginko;
+            color : orange;
+            width: 1000px;
+            height: 810;
+            border: 5px;
+        }
+
+        td#obrazek {
+            height: 810px;
+        }
+
+        td#jmeno {
+            height: 264px;
+            text-align: left;
+
+            font-size: 50px;
+        }
+
+        td#sch {
+            height: 50px;
+            text-align: left;
+        }
+        td#val {
+            width: 30px;
+            text-align: center;
+        }
+
+        div {
+            vertical-align: center;
+            align-content: center;
+        }
+
+        body {
+            background-color: black;
+            background-image: url('graphics/prazdna.png');
+            background-repeat: no-repeat;
+        }
+    </style>
     <body>
-        <script>
-
-            let zachranci = {
-                "strelci" : {
-                    "radim" : {
-                        "jmeno" : "Radim",
-                        "vlastnosti" : [
-                            {
-                                "schopnost" : "vytrvalost maratonce",
-                                "hodnota"   : "5"                            
-                            },
-                            {
-                                "schopnost" : "jít si dáchnout a nechat ostatní na holičkách",
-                                "hodnota"   : "1"                            
-                            },
-                            {
-                                "schopnost" : "šéfování inženýrství přízemních staveb",
-                                "hodnota"   : "5"                            
-                            }
-                        ]
-                    }
-                }
-            }
+        <div align="center">
+        <table id="t01">
+                    <tr>
+                        <td rowspan="6" id="obrazek">
                             
-            document.write(zachranci.strelci.radim.jmeno, zachranci.strelci.radim.vlastnosti[1].schopnost);
+                        </td>
+                        <td id="jmeno"> 
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td id="sch1">
+                            schopnost1
+                        </td>
+                        <td id="val1">
+                            val
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="sch2">
+                            schopnost2
+                        </td>
+                        <td id="val2">
+                                val
+                            </td>
+                    </tr>
+                    <tr>
+                        <td id="sch3">
+                            schopnost3
+                        </td>
+                        <td id="val3">
+                                val
+                            </td>
+                    </tr>  
+                    <tr></tr>       
+        </table>
+        
+    </div>
+    
+    <script type="text/javascript">
+        var zachranci = {
+            "radim" : {
+                "jmeno" : "Radim",
+                "foto"  : "kids/radim.jpg",
+                "vlastnosti" : [
+                    {
+                        "schopnost" : "vytrvalost maratonce",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "jít si dáchnout a nechat ostatní na holičkách",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "šéfování inženýrství přízemních staveb",
+                        "hodnota"   : "5/5"                            
+                    }
+                ]
+            },
+            "kuba" : {
+                "jmeno" : "Kuba",
+                "foto"  : "kids/kuba.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "dostatečné zásoby tekutin",
+                        "hodnota"   : "4/5"                            
+                    },
+                    {
+                        "schopnost" : "nadšení do rozcviček",
+                        "hodnota"   : "2/5"                            
+                    },
+                    {
+                        "schopnost" : "lokální radiové zprávy",
+                        "hodnota"   : "5/5"                            
+                    }
+                ]
 
+            },
+            "maks" : {
+                "jmeno" : "Maks",
+                "foto"  : "kids/maks.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "znalosti počítačových her",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "bordel ve skříni",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "vstávání z postele",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+
+            },
+            "david" : {
+                "jmeno" : "David",
+                "foto"  : "kids/david.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+
+            },
+            "adam" : {
+                "jmeno" : "Adam",
+                "foto"  : "kids/adam.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+            },
+            "kamil" : {
+                "jmeno" : "Kamil",
+                "foto"  : "kids/kamil.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+            },
+            "petr" : {
+                "jmeno" : "Petr",
+                "foto"  : "kids/Petr.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+            },
+            "tom" : {
+                "jmeno" : "Tom",
+                "foto"  : "kids/tom.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+            },
+            "vincent" : {
+                "jmeno" : "Vincent",
+                "foto"  : "kids/vincent.jpg",
+                "vlastnosti" : [
+                {
+                        "schopnost" : "",
+                        "hodnota"   : "5/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "1/5"                            
+                    },
+                    {
+                        "schopnost" : "",
+                        "hodnota"   : "3/5"                            
+                    }
+                ]
+            },
+        }
+
+        var url = document.location.href;
+        var kidid = url.split('?')[1];
+        var kid = zachranci[kidid];
+
+         
+
+            var foto = document.createElement("img");
+            foto.src = kid.foto;
+            var tabulka = document.getElementById("obrazek");
+            obrazek.appendChild(foto);
+
+            document.getElementById("jmeno").textContent = kid.jmeno; 
+            document.getElementById("sch1").textContent = kid.vlastnosti[0].schopnost; 
+            document.getElementById("val1").textContent = kid.vlastnosti[0].hodnota;
+            document.getElementById("sch2").textContent = kid.vlastnosti[1].schopnost; 
+            document.getElementById("val2").textContent = kid.vlastnosti[1].hodnota;
+            document.getElementById("sch3").textContent = kid.vlastnosti[2].schopnost; 
+            document.getElementById("val3").textContent = kid.vlastnosti[2].hodnota;
+            //document.body.appendChild(zachranci.radim.jmeno)
+
+        
         </script>
 
     </body>

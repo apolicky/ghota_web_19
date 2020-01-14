@@ -1,20 +1,19 @@
 {
-   
     "radim" : {
-        "jmeno" : "Radim",
-        "vlastnosti" : [
-            {
-                "schopnost" : "vytrvalost maratonce",
-                "hodnota"   : "5"                            
-            },
-            {
-                "schopnost" : "jít si dáchnout a nechat ostatní na holičkách",
-                "hodnota"   : "1"                            
-            },
-            {
-                "schopnost" : "šéfování inženýrství přízemních staveb",
-                "hodnota"   : "5"                            
-            }
-        ]
-    }
+    "jmeno" : "Radim",
+    "vlastnosti" : [
+        {
+            "schopnost" : "vytrvalost maratonce",
+            "hodnota"   : "5"                            
+        },
+        {
+            "schopnost" : "jít si dáchnout a nechat ostatní na holičkách",
+            "hodnota"   : "1"                            
+        },
+        {
+            "schopnost" : "šéfování inženýrství přízemních staveb",
+            "hodnota"   : "5"                            
+        }
+    ]
+}
 }
