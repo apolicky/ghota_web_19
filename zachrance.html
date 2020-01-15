@@ -2,7 +2,7 @@
     <head>
             <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>
-            Ahoj
+            Zachránce
         </title>
     </head>
     <style type="text/css"> 
@@ -24,19 +24,44 @@
         }
 
         td#jmeno {
-            height: 264px;
+            height: 130px;
             text-align: left;
 
             font-size: 50px;
         }
 
-        td#sch {
-            height: 50px;
+        td#sch1{
+            height: 90px;
             text-align: left;
         }
-        td#val {
-            width: 30px;
+        td#sch2{
+            height: 90px;
+            text-align: left;
+        }
+        td#sch2{
+            height: 90px;
+            text-align: left;
+        }
+        td#val1 {
+            width: 45px;
             text-align: center;
+        }
+        td#val2 {
+            width: 45px;
+            text-align: center;
+        }
+        td#val3 {
+            width: 45px;
+            text-align: center;
+        }
+        tr#up{
+            height: 80px;
+        }
+        td#spaceovername{
+            height: 205px;
+        }
+        td#spaceundercharacteristics{
+            height: 205px;
         }
 
         div {
@@ -53,41 +78,51 @@
     <body>
         <div align="center">
         <table id="t01">
+                    <tr id="up">
+                                    
+                    </tr>
+                    <!-- ^spacing of picture -->
                     <tr>
                         <td rowspan="6" id="obrazek">
                             
                         </td>
-                        <td id="jmeno"> 
+                        <td id="spaceovername"> 
                             
                         </td>
                     </tr>
                     <tr>
+                        <td id="jmeno">
+
+                        </td>
                     </tr>
                     <tr>
                         <td id="sch1">
-                            schopnost1
+                            
                         </td>
                         <td id="val1">
-                            val
+                            
                         </td>
                     </tr>
                     <tr>
                         <td id="sch2">
-                            schopnost2
+                            
                         </td>
                         <td id="val2">
-                                val
-                            </td>
+                        
+                        </td>
                     </tr>
                     <tr>
                         <td id="sch3">
-                            schopnost3
+                           
                         </td>
                         <td id="val3">
-                                val
-                            </td>
+                        </td>
                     </tr>  
-                    <tr></tr>       
+                    <tr>
+                        <td id="spaceundercharacteristics">
+
+                        </td>
+                    </tr>       
         </table>
         
     </div>
@@ -330,7 +365,7 @@
             },
             "kikib" : {
                 "jmeno" : "Kiki B.",
-                "foto"  : "kids/.jpg",
+                "foto"  : "kids/kikib.jpg",
                 "vlastnosti" : [
                     {
                         "schopnost" : "ladnost při předcvičování tai-či",
@@ -402,7 +437,7 @@
             },
             "julcas" : {
                 "jmeno" : "Julča S.",
-                "foto"  : "kids/.jpg",
+                "foto"  : "kids/julcas.jpg",
                 "vlastnosti" : [
                     {
                         "schopnost" : "statečnost všem šrámům navzdory",
@@ -639,7 +674,7 @@
             },
             "petr" : {
                 "jmeno" : "Petr",
-                "foto"  : "kids/Petr.jpg",
+                "foto"  : "kids/petr.jpg",
                 "vlastnosti" : [
                 {
                         "schopnost" : "všechno brát s úsměvem",
@@ -913,22 +948,18 @@
         var kidid = url.split('?')[1];
         var kid =  zachranci[kidid];
 
-         
+        var foto = document.createElement("img");
+        foto.src = kid.foto;
+        var tabulka = document.getElementById("obrazek");
+        obrazek.appendChild(foto);
 
-            var foto = document.createElement("img");
-            foto.src = kid.foto;
-            var tabulka = document.getElementById("obrazek");
-            obrazek.appendChild(foto);
-
-            document.getElementById("jmeno").textContent = kid.jmeno; 
-            document.getElementById("sch1").textContent = kid.vlastnosti[0].schopnost; 
-            document.getElementById("val1").textContent = kid.vlastnosti[0].hodnota;
-            document.getElementById("sch2").textContent = kid.vlastnosti[1].schopnost; 
-            document.getElementById("val2").textContent = kid.vlastnosti[1].hodnota;
-            document.getElementById("sch3").textContent = kid.vlastnosti[2].schopnost; 
-            document.getElementById("val3").textContent = kid.vlastnosti[2].hodnota;
-            //document.body.appendChild(zachranci.radim.jmeno)
-
+        document.getElementById("jmeno").textContent = kid.jmeno; 
+        document.getElementById("sch1").textContent = kid.vlastnosti[0].schopnost; 
+        document.getElementById("val1").textContent = kid.vlastnosti[0].hodnota;
+        document.getElementById("sch2").textContent = kid.vlastnosti[1].schopnost; 
+        document.getElementById("val2").textContent = kid.vlastnosti[1].hodnota;
+        document.getElementById("sch3").textContent = kid.vlastnosti[2].schopnost; 
+        document.getElementById("val3").textContent = kid.vlastnosti[2].hodnota;
         
         </script>
 
