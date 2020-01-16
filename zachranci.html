@@ -53,8 +53,16 @@
 	        <area a title="Zuzika" href="javascript:void(0)" onclick="window.location.href='zachrance.html?zuzka'" shape="rect" coords="1326,339,1526,384">
 	        <area a title="Tangmu" href="javascript:void(0)" onclick="window.location.href='zachrance.html?tom'" shape="rect" coords="1731,113,1871,158">
 	        </map>
-	        <img src="graphics/zachranci_ciny.png" width="1920px" alt="Zachránci Číny"  usemap="#zachranci-map" border="0"></td>      
-        </div>
+	        <img src="graphics/zachranci_ciny.png" width="100%" alt="Zachránci Číny"  usemap="#zachranci-map" border="0"></td>      
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="image-map-resizer-master/js/imageMapResizer.min.js"></script>
+		<script type="text/javascript">
+		
+			$('map').imageMapResize();
+
+		</script>
 </body>
 
 </html>

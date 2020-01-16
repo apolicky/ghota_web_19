@@ -1,11 +1,12 @@
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-          <title>Medvědi 2019</title>
+		  <title>Medvědi 2019</title>
+	<meta content="width=device-width">
   </head>
   
   <body link="#000000" vlink="#000000" alink="#000000" bgcolor="#000000">
-		    <div align="center">
+		    <div style="text-align: center;">
 				    	<map name="uvod">				    	
 								<area a title="Pohledy z cest" href="javascript:void(0)" onclick="window.location.href='pohledy.html'" shape="rect" coords="1170,765,1505,828">
 								<area a title="Zachránci" href="javascript:void(0)" onclick="window.location.href='zachranci.html'" shape="rect" coords="425,765,750,828">	
@@ -14,8 +15,15 @@
 								<area a title="Zpět" href="javascript:void(0)" onclick="window.location.href='../index.html'" shape="rect" coords="920,1030,1000,1060">
                 
  							</map>
-				  <img src="graphics/uvodsezpet.png" width="1920px" alt="Medvědi 2019"  usemap="#uvod" border="0"></td>
-	    </div>
+				  <img src="graphics/uvodsezpet.png" width="100%" alt="Medvědi 2019"  usemap="#uvod" border="0"></td>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="image-map-resizer-master/js/imageMapResizer.min.js"></script>
+		<script type="text/javascript">
+		
+			$('map').imageMapResize();
+
+		</script>
 </body>
 
 </html>
